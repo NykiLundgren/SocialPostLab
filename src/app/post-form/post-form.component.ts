@@ -8,7 +8,7 @@ import { Post } from '../Models/Post';
 })
 export class PostFormComponent implements OnInit {
 
-  @Output() onSubmit: EventEmitter<any> = new EventEmitter();
+  @Output() submitted: EventEmitter<any> = new EventEmitter();
   title: string;
   thought: string;
 
@@ -23,6 +23,6 @@ export class PostFormComponent implements OnInit {
       thought: this.thought
     }
 
-    this.onSubmit.emit(post);
+    this.submitted.emit(post);
   }
 }
