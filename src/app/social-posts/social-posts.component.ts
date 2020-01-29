@@ -30,6 +30,13 @@ export class SocialPostsComponent implements OnInit {
       ]
 
   }
-
-
+  deletePost(post:Post){
+    //ui
+    this.posts = this.posts.filter( t => t.title !==post.title);
+}
+  onSubmit(post:Post){
+    this.submitPost(post => {
+      this.posts.push(post);
+    });
+  }
 }
