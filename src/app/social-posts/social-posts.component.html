@@ -1,6 +1,8 @@
 <div>
     <h1>My Thoughts</h1>
-    <input type= 'button' class= 'submit' value= 'New Thought!'>
+    <button type= 'button' class= 'submit' value= 'New Thought!'(click)= 'hide'>
+        <app-post-form></app-post-form>
+    </button>
     {{ post.title }}
     {{ post.thought }} 
     <i type="button" (click)= 'onDelete(post)' id= 'del' class="material-icons">delete_forever</i>
