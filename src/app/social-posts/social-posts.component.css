@@ -1,3 +1,24 @@
 h1{
-    color: rgb(3, 169, 244;)
+    color: rgb(3, 169, 244);
+    font-family: 'Homemade Apple', cursive;
+    align-self: center;
+}
+
+.main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.postTitle{
+    font-size: 24px;
+}
+
+.social{
+    
+    background-color: white;
+}
+
+.del{
+    border-radius: 50%;
 }

@@ -1,12 +1,18 @@
-<div>
+<div class= 'main'>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Homemade+Apple&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b36805c446.js" crossorigin="anonymous"></script>
+    </head>
     <h1>My Thoughts</h1>
-    <button type= 'button' class= 'submit' value= 'New Thought!'(click)= 'hide'>
+    <button type= 'button' class= 'submit'(click)= 'hide'>
+        New Thought!
         <app-post-form></app-post-form>
     </button>
-    <div *ngFor="let post of posts">
-        <p>{{ post.title }}</p>
-        <p>{{ post.thought }} </p>
-        <i type="button" (click)= 'onDelete(post)' id= 'del' class="material-icons">delete_forever</i>
+    <div *ngFor="let post of posts" class= 'social'>
+        <p class= 'postTitle'> {{ post.title }} </p>
+        <p class= 'postThought'> {{ post.thought }} </p>
+        <button type="button" (click)= 'onDelete(post)' class= 'del'>
+            <i class="far fa-trash-alt">X</i>
+        </button>
     </div>
-    
 </div>
